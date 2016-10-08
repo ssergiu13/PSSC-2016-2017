@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Models.University
 {
-    public enum Titles { PhD, Engineer, Professor, AssistantProfessor, Instructor, AssociateInstructor }
+    public enum Titles { Doctor, Engineer, Professor, AssistantProfessor, Instructor, AssociateInstructor }
 
     public class Teacher
     {

@@ -13,6 +13,7 @@ namespace Models.Records
         private HighSchoolRecord highSchoolRecord;
         private ObservationRecord observationRecord;
         private CollegeRecord collegeRecord;
+        private GradeRecord gradeRecord;
 
         public PersonalRecord PersonalRecord
         {
@@ -44,13 +45,20 @@ namespace Models.Records
             set { collegeRecord = value; }
         }
 
-        public RecordCollection(PersonalRecord personalRecord, MedicalRecord medicalRecord, HighSchoolRecord highSchoolRecord, ObservationRecord observationRecord, CollegeRecord collegeRecord)
+        public GradeRecord GradeRecord
+        {
+            get { return gradeRecord; }
+            set { gradeRecord = value; }
+        }
+
+        public RecordCollection(PersonalRecord personalRecord, MedicalRecord medicalRecord, HighSchoolRecord highSchoolRecord, ObservationRecord observationRecord, CollegeRecord collegeRecord, GradeRecord gradeRecord)
         {
             this.personalRecord = personalRecord;
             this.medicalRecord = medicalRecord;
             this.highSchoolRecord = highSchoolRecord;
             this.observationRecord = observationRecord;
             this.collegeRecord = collegeRecord;
+            this.gradeRecord = gradeRecord;
         }
     }
 }

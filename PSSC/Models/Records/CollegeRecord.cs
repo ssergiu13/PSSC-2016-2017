@@ -4,12 +4,10 @@
     {
         private int studyYear;
         private int? dormNumber;
-        private int currentSheduleId;
+        private Shedule shedule;
+        private int creditCount;
 
-        //TODO: Add grade related classes
-        private int gradeSituationId;
-
-        #region ObservationRecord getter / setter / new properties
+        #region CollegeRecord getter / setter / new properties
         public int StudyYear
         {
             get { return studyYear; }
@@ -22,10 +20,10 @@
             set { dormNumber = value; }
         }
 
-        public int CurrentSheduleId
+        public int CreditCount
         {
-            get { return currentSheduleId; }
-            set { currentSheduleId = value; }
+            get { return creditCount; }
+            set { creditCount = value; }
         }
 
         public bool IsAssignedToDorm
@@ -34,11 +32,12 @@
         }
         #endregion
 
-        public CollegeRecord(string studentUUID, int studyYear, int? dormNumber, int currentSheduleId) : base(studentUUID)
+        public CollegeRecord(string studentUUID, int studyYear, int? dormNumber, Shedule shedule, int creditCount) : base(studentUUID)
         {
             this.studyYear = studyYear;
             this.dormNumber = dormNumber;
-            this.currentSheduleId = currentSheduleId;
+            this.shedule = shedule;
+            this.creditCount = creditCount;
         }
     }
 }
