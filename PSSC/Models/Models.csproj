@@ -39,27 +39,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs" />
-    <Compile Include="CollegeClass.cs" />
-    <Compile Include="Persister.cs" />
+    <Compile Include="Deanship\IReportPublisher.cs" />
+    <Compile Include="Deanship\StudyYear.cs" />
+    <Compile Include="Generics\Attendence.cs" />
+    <Compile Include="Generics\Credits.cs" />
+    <Compile Include="Generics\Exceptions\InvalidCreditsValue.cs" />
+    <Compile Include="Generics\Grade.cs" />
+    <Compile Include="Generics\PlainText.cs" />
+    <Compile Include="Generics\Proportion.cs" />
+    <Compile Include="Generics\RegistrationNumber.cs" />
+    <Compile Include="Professor\Professor.cs" />
+    <Compile Include="Professor\Subjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Records\CollegeRecord.cs" />
-    <Compile Include="Records\GradeRecord.cs" />
-    <Compile Include="Records\HighSchoolRecord.cs" />
-    <Compile Include="Records\MedicalRecord.cs" />
-    <Compile Include="Records\ObservationRecord.cs" />
-    <Compile Include="Records\PersonalRecord.cs" />
-    <Compile Include="Records\Record.cs" />
-    <Compile Include="Records\RecordCollection.cs" />
-    <Compile Include="Shedule.cs" />
-    <Compile Include="Students\BachelorStudent.cs" />
-    <Compile Include="Students\DoctorateStudent.cs" />
-    <Compile Include="Students\MasterStudent.cs" />
-    <Compile Include="Students\Student.cs" />
-    <Compile Include="University\College.cs" />
-    <Compile Include="University\Department.cs" />
-    <Compile Include="University\Teacher.cs" />
-    <Compile Include="University\University.cs" />
+    <Compile Include="Student\GradeReport.cs" />
+    <Compile Include="Student\Student.cs" />
+    <Compile Include="Subject\EvaluationType.cs" />
+    <Compile Include="Subject\Subject.cs" />
+    <Compile Include="Subject\SubjectInformation.cs" />
+    <Compile Include="Subject\SubjectSituation.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
