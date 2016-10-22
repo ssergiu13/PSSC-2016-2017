@@ -1,5 +1,10 @@
 ﻿using Models.Generics;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Models.Professor
 {
@@ -7,6 +12,7 @@ namespace Models.Professor
     public class Subjects
     {
         private List<Subject.Subject> _subjects;
+        public ReadOnlyCollection<Subject.Subject> AllSubjects { get { return _subjects.AsReadOnly(); } }
 
         public Subjects(List<Subject.Subject> subjects)
         {
